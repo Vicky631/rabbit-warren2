@@ -19,8 +19,8 @@ from flow_matching.path import AffineProbPath
 from flow_matching.path.scheduler import CondOTScheduler
 from flow_matching.solver import ODESolver
 from flow_matching.utils import ModelWrapper
-from flow_matching.loss import FlowMatchingLoss
-
+# from flow_matching.loss import FlowMatchingLoss
+from flow_matching.loss import MixturePathGeneralizedKL
 
 class DetectionFlowModel(nn.Module):
     """
